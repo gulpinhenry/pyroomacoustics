@@ -49,8 +49,10 @@ chrono = time.time()
 room.compute_rir()
 print("Done in", time.time() - chrono, "seconds.")
 print("RT60:", room.measure_rt60()[0, 0])
-
+plt.figure()
 room.plot_rir()
 plt.show()
 room.simulate()
 audio_reverb = room.mic_array.to_wav("aaa.wav", norm=True, bitdepth=np.int16)
+
+plt.show()

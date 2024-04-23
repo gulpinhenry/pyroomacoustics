@@ -1,0 +1,77 @@
+Channels:
+ - conda-forge
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: C:\Users\henry\miniconda3\envs\pyroomacoustics
+
+  added / updated specs:
+    - numpy
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    intel-openmp-2024.1.0      |     h57928b3_965         1.5 MB  conda-forge
+    libblas-3.9.0              |     22_win64_mkl         4.9 MB  conda-forge
+    libcblas-3.9.0             |     22_win64_mkl         5.0 MB  conda-forge
+    libexpat-2.5.0             |       h63175ca_1         135 KB  conda-forge
+    libhwloc-2.10.0            |default_h2fffb23_1000         2.3 MB  conda-forge
+    libiconv-1.17              |       hcfcfb64_2         621 KB  conda-forge
+    liblapack-3.9.0            |     22_win64_mkl         4.9 MB  conda-forge
+    libsqlite-3.45.2           |       hcfcfb64_0         849 KB  conda-forge
+    libxml2-2.12.6             |       hc3477c8_1         1.6 MB  conda-forge
+    libzlib-1.2.13             |       hcfcfb64_5          54 KB  conda-forge
+    mkl-2024.1.0               |     h66d3029_692       104.4 MB  conda-forge
+    numpy-1.26.4               |  py312h8753938_0         6.2 MB  conda-forge
+    openssl-3.2.1              |       hcfcfb64_1         7.8 MB  conda-forge
+    pthreads-win32-2.9.1       |       hfa6e2cd_3         141 KB  conda-forge
+    python-3.12.2              |h2628c8c_0_cpython        15.3 MB  conda-forge
+    python_abi-3.12            |          4_cp312           7 KB  conda-forge
+    tbb-2021.12.0              |       h91493d7_0         158 KB  conda-forge
+    tk-8.6.13                  |       h5226925_1         3.3 MB  conda-forge
+    ucrt-10.0.22621.0          |       h57928b3_0         1.2 MB  conda-forge
+    vc14_runtime-14.38.33130   |      h82b7239_18         732 KB  conda-forge
+    vs2015_runtime-14.38.33130 |      hcb4865c_18          17 KB  conda-forge
+    zlib-1.2.13                |       hcfcfb64_5         105 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:       161.3 MB
+
+The following NEW packages will be INSTALLED:
+
+  intel-openmp       conda-forge/win-64::intel-openmp-2024.1.0-h57928b3_965 
+  libblas            conda-forge/win-64::libblas-3.9.0-22_win64_mkl 
+  libcblas           conda-forge/win-64::libcblas-3.9.0-22_win64_mkl 
+  libexpat           conda-forge/win-64::libexpat-2.5.0-h63175ca_1 
+  libhwloc           conda-forge/win-64::libhwloc-2.10.0-default_h2fffb23_1000 
+  libiconv           conda-forge/win-64::libiconv-1.17-hcfcfb64_2 
+  liblapack          conda-forge/win-64::liblapack-3.9.0-22_win64_mkl 
+  libsqlite          conda-forge/win-64::libsqlite-3.45.2-hcfcfb64_0 
+  libxml2            conda-forge/win-64::libxml2-2.12.6-hc3477c8_1 
+  libzlib            conda-forge/win-64::libzlib-1.2.13-hcfcfb64_5 
+  mkl                conda-forge/win-64::mkl-2024.1.0-h66d3029_692 
+  numpy              conda-forge/win-64::numpy-1.26.4-py312h8753938_0 
+  pthreads-win32     conda-forge/win-64::pthreads-win32-2.9.1-hfa6e2cd_3 
+  python_abi         conda-forge/win-64::python_abi-3.12-4_cp312 
+  tbb                conda-forge/win-64::tbb-2021.12.0-h91493d7_0 
+  ucrt               conda-forge/win-64::ucrt-10.0.22621.0-h57928b3_0 
+  vc14_runtime       conda-forge/win-64::vc14_runtime-14.38.33130-h82b7239_18 
+
+The following packages will be UPDATED:
+
+  openssl              pkgs/main::openssl-3.0.13-h2bbff1b_0 --> conda-forge::openssl-3.2.1-hcfcfb64_1 
+  tk                        pkgs/main::tk-8.6.12-h2bbff1b_0 --> conda-forge::tk-8.6.13-h5226925_1 
+  vs2015_runtime     pkgs/main::vs2015_runtime-14.27.29016~ --> conda-forge::vs2015_runtime-14.38.33130-hcb4865c_18 
+  zlib                    pkgs/main::zlib-1.2.13-h8cc25b3_0 --> conda-forge::zlib-1.2.13-hcfcfb64_5 
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  python                pkgs/main::python-3.12.2-h1d929f7_0 --> conda-forge::python-3.12.2-h2628c8c_0_cpython 
+
+
+Proceed ([y]/n)? 

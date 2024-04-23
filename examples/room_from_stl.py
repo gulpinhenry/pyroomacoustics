@@ -24,7 +24,7 @@ except ImportError as err:
     )
     raise err
 
-default_stl_path = Path(__file__).parent / "data/INRIA_MUSIS.stl"
+default_stl_path = Path(__file__).parent / "data/testfile.stl"
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Basic room from STL file example")
@@ -37,9 +37,10 @@ if __name__ == "__main__":
 
     # with numpy-stl
     the_mesh = mesh.Mesh.from_file(args.file)
+    
     ntriang, nvec, npts = the_mesh.vectors.shape
-    size_reduc_factor = 500.0  # to get a realistic room size (not 3km)
-
+    print(ntriang, nvec, npts)
+    size_reduc_factor = 50.0  # to get a realistic room size (not 3km)
     # create one wall per triangle
     walls = []
     for w in range(ntriang):
@@ -51,6 +52,7 @@ if __name__ == "__main__":
             )
         )
 
+    print(walls[0].corners[:,0])
     room = (
         pra.Room(
             walls,
@@ -59,7 +61,8 @@ if __name__ == "__main__":
             ray_tracing=True,
             air_absorption=True,
         )
-        .add_source([-2.0, 2.0, 1.8])
+        # .add_source([-0.6, -0.2313, 1.16778]) for box room (tree or not tree)
+        .add_source([-0.6, -0.2313, 1.16778])
         .add_microphone_array(np.c_[[-6.5, 8.5, 3 + 0.1], [-6.5, 8.1, 3 + 0.1]])
     )
 
